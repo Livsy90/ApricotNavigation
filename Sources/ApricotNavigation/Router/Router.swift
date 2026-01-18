@@ -28,6 +28,7 @@ public final class Router {
     }
     
     public func navigateBack() {
+        guard navigationPath.count > 0 else { return }
         navigationPath.removeLast()
     }
     
